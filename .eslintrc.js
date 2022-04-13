@@ -2,18 +2,11 @@ const { difference } = require('lodash')
 const pkg = require('./package.json')
 const dependenciesList = Object.entries(pkg.dependencies).flatMap(([k]) => k)
 const safeList = [
-  '@hisho/reset.css',
-  '@mantine/next',
-  '@mantine/core',
-  '@hookform/resolvers',
   'next',
   'react',
   'react-dom',
-  'react-hook-form',
   'framer-motion',
   'focus-visible',
-  'micro-cors',
-  'apollo-server-micro',
   'pathpida',
 ]
 const noRestrictedImportsPatterns = difference(dependenciesList, safeList)

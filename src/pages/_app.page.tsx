@@ -3,9 +3,9 @@
  */
 import 'focus-visible'
 
-import {Box, ChakraProvider} from "@chakra-ui/react";
+import { Box, ChakraProvider } from '@chakra-ui/react'
+import { LayoutGroup } from 'framer-motion'
 import type { AppPropsWithLayout } from 'next/app'
-import {LayoutGroup} from "framer-motion";
 
 /**
  * @see https://nextjs.org/docs/basic-features/typescript#custom-app
@@ -15,9 +15,8 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
   return (
     <ChakraProvider>
       <LayoutGroup id={'test'}>
-        <Box w={"full"} maxW={'1000px'} px={'20px'} mx={'auto'}>
-
-        {getLayout(<Component {...pageProps} />, pageProps)}
+        <Box maxW={'1000px'} mx={'auto'} px={'20px'} w={'full'}>
+          {getLayout(<Component {...pageProps} />, pageProps)}
         </Box>
       </LayoutGroup>
     </ChakraProvider>

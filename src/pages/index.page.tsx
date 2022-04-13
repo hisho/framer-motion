@@ -10,7 +10,7 @@ const Home: NextPageWithLayout = () => {
 }
 
 Home.getLayout = (page) => {
-  return <>{page}</>
+  return page
 }
 
 export default Home

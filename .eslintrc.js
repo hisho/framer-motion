@@ -2,6 +2,7 @@ const { difference } = require('lodash')
 const pkg = require('./package.json')
 const dependenciesList = Object.entries(pkg.dependencies).flatMap(([k]) => k)
 const safeList = [
+  '@chakra-ui/react',
   'next',
   'react',
   'react-dom',

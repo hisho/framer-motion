@@ -19,9 +19,10 @@
     "format:prettier": "yarn lint:prettier --write"
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.8.8",
-    "@emotion/react": "^11",
-    "@emotion/styled": "^11",
+    "@hisho/reset.css": "^1.0.1",
+    "@mantine/core": "^4.1.3",
+    "@mantine/hooks": "^4.1.3",
+    "@mantine/next": "^4.1.3",
     "@types/lodash": "^4.14.181",
     "focus-visible": "^5.2.0",
     "framer-motion": "^6",
